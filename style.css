@@ -1,0 +1,78 @@
+
+/* Variables de color */
+:root {
+    --fondo: #FFF8E7;
+    --texto: #622A0F;
+    --acentos: #B5651D;
+    --resaltado: #D43939;
+    --blanco: #ffffff;
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    transition: background 0.5s ease;
+}
+
+header {
+    background-color: var(--acentos);
+    color: var(--blanco);
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h2 {
+    color: var(--acentos);
+    border-bottom: 2px solid var(--acentos);
+    padding-bottom: 5px;
+}
+
+.step {
+    background: var(--blanco);
+    border-left: 6px solid var(--acentos);
+    margin-bottom: 15px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.step:hover {
+    transform: scale(1.02);
+}
+
+.code-box {
+    background: #2d2d2d;
+    color: #a6e22e;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Consolas', monospace;
+}
+
+.energy-badge {
+    background-color: var(--resaltado);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#btn-surprise {
+    background: var(--texto);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+}
